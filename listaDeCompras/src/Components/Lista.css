@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgb(236, 243, 245);
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  border: 1px solid rgb(219, 211, 211);
+  height: 60vh;
+  width: 500px;
+  min-width: 300px;
+  max-width: 30%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(182, 179, 179);
+  background: white;
+  flex-direction: column;
+  padding: 10px;
+  gap: 2px;
+  overflow: auto;
+}
+.main h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: rgb(91, 78, 150);
+}
+.firstItens {
+  margin-top: 40px;
+  overflow: auto;
+  flex: 1;
+}
+.inptArea {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+}
+.inpt {
+  border: 0;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(67, 48, 151);
+  width: 80%;
+  height: 30px;
+}
+.inpt:focus {
+  border-bottom: 2px solid rgb(91, 78, 150);
+}
+.btSave {
+  width: 80px;
+  height: 30px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(67, 48, 151);
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btSave:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+.itensSalvos {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clear {
+  letter-spacing: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  background: 0;
+  font-size: 15px;
+  color: brown;
+  cursor: pointer;
+}
+.clear:hover {
+  font-size: 19px;
+  transition: 0.6s;
+}
+.excluirItem {
+  display: flex;
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
